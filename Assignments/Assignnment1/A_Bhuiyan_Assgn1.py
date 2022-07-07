@@ -6,7 +6,8 @@
 import random
 import math
 import time
-
+import pandas as pd
+import matplotlib.pyplot as plt
 
 def random_list(min_num, max_num, size, do_sort, unique):
     numbers = []
@@ -73,8 +74,17 @@ def randomized_binary_search(arr, key):
 
 # From https://www.geeksforgeeks.org/interpolation-search/
 def interpolation_search_recursive(arr, l, r, key):
-    if l <= r and arr[l] <= key <= arr[r]:
-        pos = int(l + ((r - l) / (arr[r] - arr[l]) * (key - arr[l])))
+
+    # Find Divide by zero error (we dont need this part)
+    if l == r:
+        if arr[l] == key:
+            return l
+        else:
+            return -1
+
+    # interpolation_search_recursive
+    if (l <= r) and arr[l] <= key <= arr[r]:
+        pos = l + int(((r - l) / (arr[r] - arr[l]) * (key - arr[l])))
         if arr[pos] == key:
             return pos
         if arr[pos] < key:
@@ -136,7 +146,24 @@ def fibonacci_search(arr, key):
     return -1
 
 
+def plot_time(dict_searches, sizes, searches):
+    search_num = 0
+    plt.xticks([j for j in range (len(sizes))],[str(size) for size in sizes])
+    for search in searches:
+        search_num += 1
+        d = dict_searches[search.__name__]
+        x_axis = [j + 0.05 * search_num for j in range(len(sizes))]
+        y_axis = [d[i] for i in sizes]
+        plt.bar(x_axis, y_axis, width=0.05, alpha=1, label=search.__name__) # alpha is the opacity in Matplotlib
+    plt.legend()
+    plt.title("Run time of search algorithms")
+    plt.xlabel("Number of elements")
+    plt.ylabel("Time for ten trials (ms)")
+    plt.savefig("Assignment1.png")
+    plt.show()
+
 def main():
+
     # my_list = random_list(min_num=1, max_num=1000, size=20, do_sort=True, unique=True)
     # print(my_list)
     # key = my_list[10]
@@ -147,7 +174,10 @@ def main():
     # print(interpolation_search(my_list, key))
     # print(jump_search(my_list, key))
     # print(fibonacci_search(my_list, key))
-    sizes = [1000 * i for i in range(1, 11)]
+
+    # You can change 1000 to some other #, the bigger the data,
+    # the more accurate image we will get
+    sizes = [1000 * i for i in range(1, 11)]  # initial val  1000*i ... (1,11)
     trials = 10
     searches = [python_search, linear_search, binary_search, randomized_binary_search,
                 interpolation_search, jump_search, fibonacci_search]
@@ -161,13 +191,21 @@ def main():
             arr = random_list(1, 1000000, size, True, True)
             idx = random.randint(1, size) - 1
             key = arr[idx]
-        for search in searches:
-            start_time = time.time()
-            idx_2 = search(arr, key)
-            end_time = time.time()
-            net_time = end_time - start_time
-            dict_searches[search.__name__][size] += 1000*net_time
-    print(dict_searches)
+            for search in searches:
+                start_time = time.time()
+                idx_2 = search(arr, key)
+                end_time = time.time()
+                if idx_2 != idx:
+                    print("We have an error in", search.__name__, "found at", idx_2, "expected at", idx)
+                net_time = end_time - start_time
+                dict_searches[search.__name__][size] += 1000*net_time
+    #print(dict_searches)
+    pd.set_option("display.max_rows", 500)
+    pd.set_option("display.max_columns", 500)
+    pd.set_option("display.width", 500)
+    df = pd.DataFrame.from_dict(dict_searches).T
+    print(df)
+    plot_time(dict_searches, sizes, searches)
 
 
 if __name__ == "__main__":
