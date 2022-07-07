@@ -1,5 +1,3 @@
-python -u "/Users/akil/A_Bhuiyan_Assgn1.py"
-(base) akil@akils-mbp akil % python -u "/Users/akil/A_Bhuiyan_Assgn1.py"
                              1000      2000      3000      4000      5000      6000      7000      8000      9000      10000
 python_search             0.072241  0.175953  0.280380  0.326872  0.601292  0.608444  0.572920  0.662565  0.725985  1.000404
 linear_search             0.294685  0.784397  1.239538  1.374006  2.537966  2.528667  2.377033  2.695084  2.931118  4.125834

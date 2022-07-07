@@ -7,5 +7,5 @@ Advanced data structures: B-trees, graphs, hash-tables. Problem-solving strategi
 <br>
 
 <p align="center">
-  <img width="700" height="400" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignnment1/Assignment1.png" alt="Search Algorithm">
+  <img src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignnment1/Assignment1.png" alt="Search Algorithm">
 </p>
