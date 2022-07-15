@@ -12,7 +12,7 @@ Advanced data structures: B-trees, graphs, hash-tables. Problem-solving strategi
 
 <br>
 
-## [Assignment 2](https://docs.google.com/document/d/1yHQJErWWvb-uHm_yYrCBkD5JP-vZe9Ul/edit?usp=sharing&ouid=108521352184329535462&rtpof=true&sd=true) - Empircal Analysis of Sorting Algorithms [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment2/A_Bhuiyan_Assgn2.py)
+## [Assignment 2](https://drive.google.com/open?id=1yHQJErWWvb-uHm_yYrCBkD5JP-vZe9Ul) - Empircal Analysis of Sorting Algorithms [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment2/A_Bhuiyan_Assgn2.py)
 
 <br>
 
@@ -22,7 +22,7 @@ Advanced data structures: B-trees, graphs, hash-tables. Problem-solving strategi
 
 <br>
 
-## [Assignment 3](https://docs.google.com/document/d/1KPKplnG4Yes_uNKM2toVjFXKluOyjIfX/edit?usp=sharing&ouid=108521352184329535462&rtpof=true&sd=true) - EEmpirical Performance of Matrix Multiplication [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment3/A_Bhuiyan_Assgn3.py)
+## [Assignment 3](https://drive.google.com/open?id=1KPKplnG4Yes_uNKM2toVjFXKluOyjIfX) - EEmpirical Performance of Matrix Multiplication [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment3/A_Bhuiyan_Assgn3.py)
 
 <br>
 
@@ -32,7 +32,7 @@ Advanced data structures: B-trees, graphs, hash-tables. Problem-solving strategi
 
 <br>
 
-## [Assignment 4](https://docs.google.com/document/d/1KPKplnG4Yes_uNKM2toVjFXKluOyjIfX/edit?usp=sharing&ouid=108521352184329535462&rtpof=true&sd=true) - Not Assigned Yet [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment4/A_Bhuiyan_Assgn4.py)
+## [Assignment 4](https://drive.google.com/open?id=1KPKplnG4Yes_uNKM2toVjFXKluOyjIfX) - Not Assigned Yet [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment4/A_Bhuiyan_Assgn4.py)
 
 <br>
 
