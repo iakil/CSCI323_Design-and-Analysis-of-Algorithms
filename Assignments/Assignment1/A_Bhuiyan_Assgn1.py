@@ -159,7 +159,7 @@ def plot_time(dict_searches, sizes, searches):
     plt.title("Run time of search algorithms")
     plt.xlabel("Number of elements")
     plt.ylabel("Time for ten trials (ms)")
-    plt.savefig("Assignment1.png")
+    plt.savefig("Assignments/Assignment1/Assignment1.png")
     plt.show()
 
 def main():

@@ -22,7 +22,7 @@ Advanced data structures: B-trees, graphs, hash-tables. Problem-solving strategi
 
 <br>
 
-## [Assignment 3](https://drive.google.com/open?id=1KPKplnG4Yes_uNKM2toVjFXKluOyjIfX) - EEmpirical Performance of Matrix Multiplication [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment3/A_Bhuiyan_Assgn3.py)
+## [Assignment 3](https://drive.google.com/open?id=1KPKplnG4Yes_uNKM2toVjFXKluOyjIfX) - Empirical Performance of Matrix Multiplication [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment3/A_Bhuiyan_Assgn3.py)
 
 <br>
 
