@@ -8,7 +8,7 @@ Advanced data structures: B-trees, graphs, hash-tables. Problem-solving strategi
 ___
 
 <p align="center">
-  <img width="200" height="100" src="https://drive.google.com/uc?export=view&id=1_9r_EWmSjv1WM40NW0ybgstOBAcvl1dv" alt="Akil-Logo">
+  <img src="https://drive.google.com/uc?export=view&id=1_9r_EWmSjv1WM40NW0ybgstOBAcvl1dv" alt="Akil-Logo">
 </p>
 
 ___
@@ -20,7 +20,7 @@ ___
 <br>
 
 <p align="center">
-  <img src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment1/Assignment1.png" alt="Search Algorithms">
+  <img width="480" height="640" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment1/Assignment1.png" alt="Search Algorithms">
 </p>
 
 <br>
@@ -30,7 +30,7 @@ ___
 <br>
 
 <p align="center">
-  <img src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment2/Assignment2.png" alt="Sort Algorithms">
+  <img width="480" height="640" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment2/Assignment2.png" alt="Sort Algorithms">
 </p>
 
 <br>
@@ -40,7 +40,7 @@ ___
 <br>
 
 <p align="center">
-  <img src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment3/Assignment3.png" alt="Matrix Multiplication">
+  <img width="480" height="640" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment3/Assignment3.png" alt="Matrix Multiplication">
 </p>
 
 <br>
@@ -50,7 +50,7 @@ ___
 <br>
 
 <p align="center">
-  <img src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment4/Assignment4.png" alt=" Algorithm">
+  <img width="480" height="640" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment4/Assignment4.png" alt=" Algorithm">
 </p>
 
 <br>
