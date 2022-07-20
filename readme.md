@@ -20,7 +20,7 @@ ___
 <br>
 
 <p align="center">
-  <img width="480" height="640" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment1/Assignment1.png" alt="Search Algorithms">
+  <img width="640" height="480" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment1/Assignment1.png" alt="Search Algorithms">
 </p>
 
 <br>
@@ -30,7 +30,7 @@ ___
 <br>
 
 <p align="center">
-  <img width="480" height="640" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment2/Assignment2.png" alt="Sort Algorithms">
+  <img width="640" height="480" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment2/Assignment2.png" alt="Sort Algorithms">
 </p>
 
 <br>
@@ -40,7 +40,7 @@ ___
 <br>
 
 <p align="center">
-  <img width="480" height="640" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment3/Assignment3.png" alt="Matrix Multiplication">
+  <img width="640" height="480" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment3/Assignment3.png" alt="Matrix Multiplication">
 </p>
 
 <br>
@@ -50,7 +50,7 @@ ___
 <br>
 
 <p align="center">
-  <img width="480" height="640" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment4/Assignment4.png" alt=" Algorithm">
+  <img width="640" height="480" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment4/Assignment4.png" alt=" Algorithm">
 </p>
 
 <br>
