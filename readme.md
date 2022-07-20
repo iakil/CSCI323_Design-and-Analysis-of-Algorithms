@@ -2,6 +2,21 @@
 
 Advanced data structures: B-trees, graphs, hash-tables. Problem-solving strategies including divide-and-conquer, backtracking, dynamic programming, and greedy algorithms. Advanced graph algorithms. Time complexity analysis. NP-complete problems. Applications to sorting, searching, strings, graphs. Programming projects. 
 
+<<<<<<< 8ff1b2f6864146dc856e7d3bdc2fc769c94617b0
+=======
+<br>
+
+___
+
+<p align="center">
+  <img width="200" height="100" src="https://drive.google.com/uc?export=view&id=1_9r_EWmSjv1WM40NW0ybgstOBAcvl1dv" alt="Akil-Logo">
+</p>
+
+___
+
+<br>
+
+>>>>>>> 323
 ## [Assignment 1](https://drive.google.com/open?id=1OxHV61h49uulY6zSPOI-0k0ARXxfk-jG) - Empircal Analysis of Search Algorithms [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment1/A_Bhuiyan_Assgn1.py)
 
 <br>
