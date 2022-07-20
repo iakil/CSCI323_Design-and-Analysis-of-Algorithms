@@ -348,9 +348,10 @@ def radix_sort(arr):
         exp *= 10
 
     return arr
-    
+
+
+# Ref https://www.geeksforgeeks.org/python-program-for-gnome-sort/ 
 # From https://rosettacode.org/wiki/Sorting_algorithms/Gnome_sort#Python
-# From https://www.geeksforgeeks.org/python-program-for-gnome-sort/
 def gnome_sort(arr):
 	i,j,size = 1,2,len(arr)
 	while i < size:

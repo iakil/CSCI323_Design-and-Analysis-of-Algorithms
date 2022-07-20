@@ -36,7 +36,6 @@ def simple_mult(m, n):
     return temp
 
 # Ref https://www.geeksforgeeks.org/strassens-matrix-multiplication/
-# Ref https://medium.com/@ananyasingh1618/strassens-multiplication-matrix-62bbb10225e6
 # From # From https://www.interviewbit.com/blog/strassens-matrix-multiplication/
 def strassen_mult(m1, m2):
     if len(m1) == 1 or len(m2) == 1:
@@ -80,7 +79,7 @@ def plot_time(dict_matrixLst, sizes, matrixLst, trials):
     plt.legend()
     plt.title("Run time of Matrix Multiplication")
     plt.xlabel("Size of Matrix")
-    plt.ylabel("Time for 10 trials (ms)")
+    plt.ylabel("Time for 1 trial (ms)")
     plt.savefig("Assignments/Assignment3/Assignment3.png")
     plt.show()
 
