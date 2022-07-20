@@ -45,12 +45,22 @@ ___
 
 <br>
 
-## [Assignment 4](https://drive.google.com/open?id=1KPKplnG4Yes_uNKM2toVjFXKluOyjIfX) - Not Assigned Yet [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment4/A_Bhuiyan_Assgn4.py)
+## [Assignment 4](https://drive.google.com/open?id=1IwKlL8H9OC8xrfEeXk8lgX2CoQlYVzT7) - Empirical Performance of Search Structure [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment4/A_Bhuiyan_Assgn4.py)
 
 <br>
 
 <p align="center">
-  <img width="640" height="480" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment4/Assignment4.png" alt=" Algorithm">
+  <img width="640" height="480" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment4/Assignment4.png" alt="Search Structure">
+</p>
+
+<br>
+
+## [Assignment 5](https://drive.google.com/open?id=1EuxDYfVBlpJQLfP4iiRvGPGEDNQ-atSH) - Palindromic Substrings and Subsequences [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment5/A_Bhuiyan_Assgn5.py)
+
+<br>
+
+<p align="center">
+  <img width="640" height="480" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment5/Assignment5.png" alt="Palindromic Substrings and Subsequences ">
 </p>
 
 <br>
