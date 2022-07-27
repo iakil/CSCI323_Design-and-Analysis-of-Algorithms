@@ -59,8 +59,3 @@ ___
 
 <br>
 
-<p align="center">
-  <img width="640" height="480" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment5/Assignment5.png" alt="Palindromic Substrings and Subsequences ">
-</p>
-
-<br>
