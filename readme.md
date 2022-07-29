@@ -49,15 +49,12 @@ ___
 
 <br>
 
-<p float="middle">
-  <img src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment4/Assignment4a.png" width="320" height="240" title = "Graph For Build Functions" />
-  <img src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment4/Assignment4b.png" width="320" height="240" title = "Graph For Search Functions" /> 
-</p>
-
+  Graph For Build            |  Graph For Search
+  :-------------------------:|:-------------------------:
+  ![Graph For Build](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment4/Assignment4a.png)  |  ![Graph For Search](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment4/Assignment4b.png)
 
 <br>
 
 ## [Assignment 5](https://drive.google.com/open?id=1EuxDYfVBlpJQLfP4iiRvGPGEDNQ-atSH) - Palindromic Substrings and Subsequences [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment5/A_Bhuiyan_Assgn5.py)
 
 <br>
-
