@@ -49,9 +49,11 @@ ___
 
 <br>
 
-<p align="center">
-  <img width="640" height="480" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment4/Assignment4.png" alt="Search Structure">
+<p float="middle">
+  <img src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment4/Assignment4a.png" width="320" height="240" title = "Graph For Build Functions" />
+  <img src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment4/Assignment4b.png" width="320" height="240" title = "Graph For Search Functions" /> 
 </p>
+
 
 <br>
 

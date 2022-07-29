@@ -1,0 +1,48 @@
+def build_cuckoo_hash(datas):
+    size = len(datas)
+    table_size = size*10
+    num_tables = 2
+
+    # init table
+    hash_table = [None] * num_tables
+    hash_table[0] = [-1] * size
+    hash_table[1] = [-1] * size
+    pos = [None] * num_tables
+
+    for i in range(size):
+        cuckoo_insert(datas[i], 0, 0, size, pos, hash_table)
+
+    return hash_table
+
+def hash(func_num, key, size):
+    if func_num == 1:
+        return key % size
+    else:
+        return int(key/size) % size
+
+
+def cuckoo_insert(key, table_num, cnt, table_size, pos, hash_table):
+    if cnt == table_size:
+        print("unpositioned:", key)
+        print("Cycle present. REHASH.")
+        return
+
+    ver = len(hash_table)
+    for i in range(ver):
+        pos[i] = hash(i + 1, key, table_size)
+        if hash_table[i][pos[i]] == key:
+            return
+
+    if hash_table[table_num][pos[table_num]] != -1:  # if some thingelse if there
+        dis = hash_table[table_num][pos[table_num]]
+        hash_table[table_num][pos[table_num]] = key
+        cuckoo_insert(dis, (table_num+1) % ver, cnt+1, table_size, pos, hash_table)
+    else:
+        hash_table[table_num][pos[table_num]] = key
+
+def search_cuckoo_hash(hash_table, key, table_size):
+    ver = len(hash_table)
+    for i in range(ver):
+        pos = hash(i + 1, key, table_size)
+        if hash_table[i][pos] == key:
+            return i, pos

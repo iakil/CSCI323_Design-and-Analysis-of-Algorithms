@@ -118,12 +118,11 @@ def draw(txt):
     tt.header(headers)
     print(tt.draw())
 
-
 def main():
-    #test_lpsst_and_lpssq(input("Enter string to compute longest palindrome string \n"))
+    #test_lpsst_and_lpssq(input("Enter string to compute longest palindrome string (Default: QUEENSCOLLEGEOFCUNY)\n"))
     test_lpsst_and_lpssq("QUEENSCOLLEGEOFCUNY")
-    palindromes_txt = "palindromes.txt"
-    sentences_txt = "sentences.txt"
+    palindromes_txt = "Assignment5_Palindromes.txt" # copy the actual path of this txt file
+    sentences_txt = "Assignment5_Sentences.txt" # ^ , or it will give error
     draw(palindromes_txt)
     draw(sentences_txt)
 
