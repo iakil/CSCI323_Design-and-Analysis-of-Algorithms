@@ -58,3 +58,9 @@ ___
 ## [Assignment 5](https://drive.google.com/open?id=1EuxDYfVBlpJQLfP4iiRvGPGEDNQ-atSH) - Palindromic Substrings and Subsequences [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment5/A_Bhuiyan_Assgn5.py)
 
 <br>
+
+
+
+## [Assignment 6](https://drive.google.com/open?id=1xRV6VBPOe-c0e3CLDscpMi0vmVrvEySU) - Sub-String Search Algorithms [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment6/A_Bhuiyan_Assgn6.py)
+
+<br>
