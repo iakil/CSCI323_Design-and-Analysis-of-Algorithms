@@ -7,19 +7,21 @@
 import numpy as np
 import random
 import time
+from tabulate import tabulate
 import pandas as pd
 import matplotlib.pyplot as plt
+asgnNum = 3
 
-# From https://stackoverflow.com/questions/17870612/printing-a-two-dimensional-array-in-python
+
 def print_matrix(matrix):
     print('\n'.join([''.join(['{:4}'.format(item) for item in row])for row in matrix]) + "\n")
 
-# From https://stackoverflow.com/questions/7717380/how-to-convert-2d-list-to-2d-numpy-array
+
 def random_matrix(mn, mx, rows, cols):
     matrix = [[random.randint(mn, mx) for col in range(0, cols)] for row in range(0, rows)]
     return np.array(matrix)
 
-# From https://numpy.org/doc/stable/reference/generated/numpy.dot.html
+
 def native_mult(m1, m2):
     return np.dot(m1, m2)
 
@@ -36,7 +38,7 @@ def simple_mult(m, n):
     return temp
 
 # Ref https://www.geeksforgeeks.org/strassens-matrix-multiplication/
-# From # From https://www.interviewbit.com/blog/strassens-matrix-multiplication/
+# From https://www.interviewbit.com/blog/strassens-matrix-multiplication/
 def strassen_mult(m1, m2):
     if len(m1) == 1 or len(m2) == 1:
         return m1 * m2
@@ -77,10 +79,10 @@ def plot_time(dict_matrixLst, sizes, matrixLst, trials):
         y_axis = [d[i] for i in sizes]
         plt.bar(x_axis, y_axis, width=0.05, alpha=1, label=matrixLst.__name__)
     plt.legend()
-    plt.title("Run time of Matrix Multiplication")
+    plt.title("Run Time of Matrix Multiplication")
     plt.xlabel("Size of Matrix")
-    plt.ylabel("Time for 1 trial (ms)")
-    plt.savefig("Assignments/Assignment3/Assignment3.png")
+    plt.ylabel(f"Time for {trials} trial (ms)")
+    plt.savefig(f"Assignments/Assignment{asgnNum}/Assignment{asgnNum}.png")
     plt.show()
 
 def matt(mn, nx, rows, cols):
@@ -88,7 +90,8 @@ def matt(mn, nx, rows, cols):
     return np.array(matrix)
 
 def main():
-    sizes = [10 * i for i in range(1, 11)]
+    #sizes = [10, 100, 1000, 10000]
+    sizes = [10*i for i in range(1, 11)]
     trials = 1
     matrixLst = [native_mult, simple_mult, strassen_mult]
     dict_matrixLst= {}
@@ -112,7 +115,8 @@ def main():
     pd.set_option("display.max_columns", 500)
     pd.set_option("display.width", 1000)
     df = pd.DataFrame.from_dict(dict_matrixLst).T
-    print(df)
+    #print(df)
+    print(tabulate(df, headers='keys', tablefmt='psql'))
     plot_time(dict_matrixLst, sizes, matrixLst, trials)
 
 

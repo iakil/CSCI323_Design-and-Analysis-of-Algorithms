@@ -59,8 +59,6 @@ ___
 
 <br>
 
-
-
 ## [Assignment 6](https://drive.google.com/open?id=1xRV6VBPOe-c0e3CLDscpMi0vmVrvEySU) - Sub-String Search Algorithms [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment6/A_Bhuiyan_Assgn6.py)
 
 <br>

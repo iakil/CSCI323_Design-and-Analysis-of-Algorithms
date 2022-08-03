@@ -8,8 +8,15 @@ import random
 import math
 import time
 import copy
+from tabulate import tabulate
 import pandas as pd
 import matplotlib.pyplot as plt
+asgnNum = 2
+
+
+def native_sort(arr):
+    arr.sort()
+    return arr
 
 
 def random_list(range_max, size):
@@ -20,12 +27,6 @@ def random_list(range_max, size):
         numbers.append(rnd)
         i += 1
     return numbers
-
-
-def native_sort(arr):
-    arr.sort()
-    return arr
-
 
 # From https://www.geeksforgeeks.org/bubble-sort/
 def bubble_sort(arr):
@@ -228,6 +229,7 @@ def heapify(arr, n, i):
         # Heapify the root.
         heapify(arr, n, largest)
 
+
 # From https://www.geeksforgeeks.org/heap-sort/
 # The main function to sort an array of given size
 def heap_sort(arr):
@@ -334,20 +336,24 @@ def countingSort(arr, exp1):
         arr[i] = output[i]
 
 
-# From https://www.geeksforgeeks.org/radix-sort/
-def radix_sort(arr):
-    # Find the maximum number to know number of digits
-    max1 = max(arr)
-
-    # Do counting sort for every digit. Note that instead
-    # of passing digit number, exp is passed. exp is 10^i
-    # where i is current digit number
-    exp = 1
-    while max1 / exp > 1:
-        countingSort(arr, exp)
-        exp *= 10
-
-    return arr
+# From https://www.w3resource.com/python-exercises/data-structures-and-algorithms/python-search-and-sorting-exercise-19.php
+def radix_sort(nums):
+    RADIX = 10
+    placement = 1
+    max_digit = max(nums)
+    while placement < max_digit:
+      buckets = [list() for _ in range( RADIX )]
+      for i in nums:
+        tmp = int((i / placement) % RADIX)
+        buckets[tmp].append(i)
+      a = 0
+      for b in range( RADIX ):
+        buck = buckets[b]
+        for i in buck:
+          nums[a] = i
+          a += 1
+      placement *= RADIX
+    return nums
 
 
 # Ref https://www.geeksforgeeks.org/python-program-for-gnome-sort/ 
@@ -363,10 +369,10 @@ def gnome_sort(arr):
 			if i == 0:
 				i,j = j, j+1
 	return arr
- 
+
 
 #PlotTime
-def plot_time(dict_searches, sizes, searches):
+def plot_time(dict_searches, sizes, searches, trials):
     search_num = 0
     plt.xticks([j for j in range(len(sizes))], [str(size) for size in sizes])
     for search in searches:
@@ -376,15 +382,17 @@ def plot_time(dict_searches, sizes, searches):
         y_axis = [d[i] for i in sizes]
         plt.bar(x_axis, y_axis, width=0.05, alpha=1, label=search.__name__)
     plt.legend()
-    plt.title("Run time of Sort Algorithms")
+    plt.title("Run Time of Sort Algorithms")
     plt.xlabel("Number of Elements")
-    plt.ylabel("Time for ten trials (ms)")
-    plt.savefig("Assignments/Assignment2/Assignment2.png")
+    plt.ylabel(f"Time for {trials} trials (ms)")
+    plt.savefig(f"Assignments/Assignment{asgnNum}/Assignment{asgnNum}.png")
     plt.show()
+
 
 # MAIN
 def main():
-    sizes = [1000 * i for i in range(1, 4)] 
+    #sizes = [10, 100, 1000, 10000]
+    sizes = [100 * i for i in range(1, 11)] 
     trials = 10
     sorts = [native_sort,  bubble_sort, selection_sort, insertion_sort, cocktail_sort, shell_sort,
              merge_sort, quick_sort, heap_sort, counting_sort, bucket_sort, radix_sort, gnome_sort]
@@ -404,8 +412,7 @@ def main():
                 end_time = time.time()
                 build_in_sort = native_sort(arr2)
                 if build_in_sort != implement_sort:
-                    idx , idx_2 = 0,0
-                    print("We have an error in", sort.__name__,  "found at", idx_2, "expected at", idx)
+                    print(f"We have an error in {sort.__name__}, please fix it")
                 net_time = end_time - start_time
                 dict_sorts[sort.__name__][size] += 1000 * net_time
         dict_sorts[sort.__name__][size] /= trials
@@ -413,8 +420,9 @@ def main():
     pd.set_option("display.max_columns", 500)
     pd.set_option("display.width", 1000)
     df = pd.DataFrame.from_dict(dict_sorts).T
-    print(df)
-    plot_time(dict_sorts, sizes, sorts)
+    #print(df)
+    print(tabulate(df, headers='keys', tablefmt='psql'))
+    plot_time(dict_sorts, sizes, sorts, trials)
 
 
 if __name__ == "__main__":
