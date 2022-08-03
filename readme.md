@@ -64,3 +64,19 @@ ___
 ## [Assignment 6](https://drive.google.com/open?id=1xRV6VBPOe-c0e3CLDscpMi0vmVrvEySU) - Sub-String Search Algorithms [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment6/A_Bhuiyan_Assgn6.py)
 
 <br>
+
+<p align="center">
+  <img width="640" height="480" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment6/Assignment6.png" alt="Sub-String Search Algorithms">
+</p>
+
+<br>
+
+## [Assignment 7](https://drive.google.com/open?id=1AM8QOJsiqezs5tM5Y73JUhNYXqogYO89) - Shortest Path Algorithms for Graphs [(code)](https://github.com/iakil/CSCI323_Design-and-Analysis-of-Algorithms/blob/main/Assignments/Assignment7/A_Bhuiyan_Assgn7.py)
+
+<br>
+
+<p align="center">
+  <img width="640" height="480" src="https://github.com/iakil/CSCI323/blob/main/Assignments/Assignment7/Assignment7.png" alt="Shortest Path Algorithms for Graphs">
+</p>
+
+<br>
