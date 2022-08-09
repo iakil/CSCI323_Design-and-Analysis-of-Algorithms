@@ -12,7 +12,7 @@ import texttable
 import pandas as pd
 import matplotlib.pyplot as plt
 from numpy import split
-assn_num = 7
+asgnNum = 7
 INF = 99999
 
 
@@ -220,7 +220,7 @@ def plot_time(dict_algs, sizes, algs, trails):
     plt.title("Shortest Path Algorithms for Graphs")
     plt.xlabel("Size of Data")
     plt.ylabel(f"Time for {trails} trail (ms)")
-    plt.savefig(f"Assignments/Assignment{assn_num}/Assignment{assn_num}.png")
+    plt.savefig(f"Assignments/Assignment{asgnNum}/Assignment{asgnNum}.png")
     plt.show()
 
 
